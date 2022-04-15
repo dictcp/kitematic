@@ -3,7 +3,7 @@ import metrics from '../utils/MetricsUtil';
 import Router from 'react-router';
 import util from '../utils/Util';
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 
 var Preferences = React.createClass({
   mixins: [Router.Navigation],

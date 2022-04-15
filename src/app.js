@@ -1,6 +1,6 @@
 import "@babel/polyfill";
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const Menu = remote.Menu;
 // ipcRenderer is used as we're in the process
 const ipcRenderer = electron.ipcRenderer;

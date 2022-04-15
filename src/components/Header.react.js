@@ -3,7 +3,7 @@ import RetinaImage from 'react-retina-image';
 import util from '../utils/Util';
 import metrics from '../utils/MetricsUtil';
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const Menu = remote.Menu;
 const MenuItem = remote.MenuItem;
 import accountStore from '../stores/AccountStore';

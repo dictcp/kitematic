@@ -7,7 +7,7 @@ import util from '../utils/Util';
 import metrics from '../utils/MetricsUtil';
 import containerActions from '../actions/ContainerActions';
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const dialog = remote.dialog;
 import mkdirp from 'mkdirp';
 

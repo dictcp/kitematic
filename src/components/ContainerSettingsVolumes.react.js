@@ -1,7 +1,7 @@
 import _ from 'underscore';
 import React from 'react/addons';
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const dialog = remote.dialog;
 import {shell} from 'electron';
 import util from '../utils/Util';

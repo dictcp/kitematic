@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React from 'react/addons';
 import Router from 'react-router';
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const dialog = remote.dialog;
 import metrics from '../utils/MetricsUtil';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';

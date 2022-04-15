@@ -24,6 +24,8 @@ try {
 } catch (err) {}
 
 app.on('ready', function () {
+  require('@electron/remote/main').initialize();
+
   var mainWindow = new BrowserWindow({
     width: size.width || 1080,
     height: size.height || 680,
@@ -36,10 +38,12 @@ app.on('ready', function () {
     show: false,
     webPreferences: {
       nodeIntegration: true,
-      enableRemoteModule: true,
+      // enableRemoteModule: true, FIXME remove later
       contextIsolation: false, // FIXME
     },
   });
+
+  require("@electron/remote/main").enable(mainWindow.webContents);
 
   if (process.env.NODE_ENV === 'development') {
     mainWindow.openDevTools({mode: 'detach'});

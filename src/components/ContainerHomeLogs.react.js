@@ -4,7 +4,8 @@ import Router from 'react-router';
 import containerActions from '../actions/ContainerActions';
 import Convert from 'ansi-to-html';
 import * as fs from 'fs';
-import { clipboard, remote, shell } from 'electron';
+import { clipboard, shell } from 'electron';
+import * as remote from '@electron/remote';
 const dialog = remote.dialog;
 
 let escape = function (html) {

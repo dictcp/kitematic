@@ -1,5 +1,5 @@
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const app = remote.app;
 import fs from 'fs';
 import util from './Util';

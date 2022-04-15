@@ -1,5 +1,5 @@
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 import {shell} from 'electron';
 import router from './router';
 import util from './utils/Util';

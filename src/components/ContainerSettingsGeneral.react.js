@@ -2,7 +2,7 @@ import _ from 'underscore';
 import React from 'react/addons';
 import metrics from '../utils/MetricsUtil';
 import electron, { clipboard } from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const dialog = remote.dialog;
 import ContainerUtil from '../utils/ContainerUtil';
 import containerActions from '../actions/ContainerActions';

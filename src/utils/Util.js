@@ -5,7 +5,7 @@ import path from 'path';
 import crypto from 'crypto';
 import http from 'http';
 import electron from 'electron';
-const remote = electron.remote;
+import * as remote from '@electron/remote';
 const dialog = remote.dialog;
 const app = remote.app;
 
