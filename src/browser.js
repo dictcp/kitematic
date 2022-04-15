@@ -37,6 +37,7 @@ app.on('ready', function () {
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true,
+      contextIsolation: false, // FIXME
     },
   });
 
