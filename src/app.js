@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import "@babel/polyfill";
 import electron from 'electron';
 const remote = electron.remote;
 const Menu = remote.Menu;
