@@ -36,6 +36,7 @@ app.on('ready', function () {
     show: false,
     webPreferences: {
       nodeIntegration: true,
+      enableRemoteModule: true,
     },
   });
 
