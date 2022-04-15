@@ -1,4 +1,8 @@
-jest.dontMock('../src/utils/Util').dontMock('console');
+jest.dontMock('../src/utils/Util').dontMock('console').doMock('@electron/remote',() => {
+  return {
+    __esModule: true,
+  };
+}); 
 const util = require('../src/utils/Util');
 
 describe('Util', () => {
